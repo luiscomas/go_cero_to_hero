@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/luiscomas/go_cero_to_hero/ejercicio02"
 )
 
@@ -50,5 +52,5 @@ func main() {
 	// iteraciones.Iterar()
 
 	//ejercicio # 2
-	ejercicio02.TablaMultiplicar()
+	fmt.Println(ejercicio02.TablaMultiplicar())
 }

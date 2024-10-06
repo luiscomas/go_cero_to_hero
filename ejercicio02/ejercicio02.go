@@ -7,9 +7,11 @@ import (
 	"strconv"
 )
 
-func TablaMultiplicar() {
+func TablaMultiplicar() string {
 	var numero int
 	var err error
+	//se agrego la parte de manejo de aerchivos aqui mismo
+	var texto string
 
 	scanner := bufio.NewScanner(os.Stdin)
 	for {
@@ -23,8 +25,10 @@ func TablaMultiplicar() {
 			}
 
 			for i := 0; i <= 10; i++ {
-				fmt.Println(numero, "x", i, "=", numero*i)
+				//fmt.Println(numero, "x", i, "=", numero*i)
+				texto += fmt.Sprintln(texto, numero, "x", i, "=", numero*i)
 			}
+			return texto
 
 		}
 
