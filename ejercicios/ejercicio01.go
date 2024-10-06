@@ -8,7 +8,7 @@ func Ejercicio01(valor string) (int, string) {
 
 	parametro, err := strconv.Atoi(valor)
 	if err != nil {
-		return 0, "Hubo un error"
+		return 0, "Hubo un error" + err.Error()
 	}
 
 	if parametro > 100 {
