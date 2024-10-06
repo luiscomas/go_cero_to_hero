@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 
+	"github.com/luiscomas/go_cero_to_hero/ejercicios"
 	"github.com/luiscomas/go_cero_to_hero/funciones"
 	"github.com/luiscomas/go_cero_to_hero/variables"
 )
@@ -22,6 +24,28 @@ func main() {
 
 	texto, verdad := funciones.Conviertoatexto(500)
 	fmt.Println(texto, verdad)
-	fmt.Println(texto)
+
+	//condiciones en GO
+	//if
+	if os := runtime.GOOS; os == "Linux." || os == "Darwin." {
+		fmt.Println("Esto no es windows estas en ", os)
+	} else {
+		fmt.Println("Estas en", os)
+	}
+	fmt.Println("sentencia switch")
+	//switch
+	switch os := runtime.GOOS; os {
+	case "Linux":
+		fmt.Println("Esto no es windows estas en ", os)
+	case "Darwin":
+		fmt.Println("Esto no es windows estas en ", os)
+	default:
+		fmt.Printf("%s \n", os)
+	}
+
+	fmt.Println("resultado ejercicio # 1")
+	//ejercicio # 1
+	resultado, mensaje := ejercicios.Ejercicio01("500")
+	fmt.Println(resultado, mensaje)
 
 }
