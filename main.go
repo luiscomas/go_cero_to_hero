@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/luiscomas/go_cero_to_hero/ejercicio02"
+	"github.com/luiscomas/go_cero_to_hero/mapas"
 )
 
 func main() {
@@ -52,5 +50,13 @@ func main() {
 	// iteraciones.Iterar()
 
 	//ejercicio # 2
-	fmt.Println(ejercicio02.TablaMultiplicar())
+	// fmt.Println(ejercicio02.TablaMultiplicar())
+	// files.SumaTabla()
+	//files.LeoArchivo()
+	// funciones.FuncionSuma()
+	// funciones.Exponencial(10)
+	//arreglos_slices.Arreglos()
+	//arreglos_slices.Slices()
+	//arreglos_slices.Capacidad()
+	mapas.Mapas()
 }

@@ -20,13 +20,11 @@ func TablaMultiplicar() string {
 			numero, err = strconv.Atoi(scanner.Text())
 			if err != nil {
 				continue
-			} else {
-				os.Clearenv()
 			}
 
 			for i := 0; i <= 10; i++ {
 				//fmt.Println(numero, "x", i, "=", numero*i)
-				texto += fmt.Sprintln(texto, numero, "x", i, "=", numero*i)
+				texto += fmt.Sprintf("%d x %d = %d \n", numero, i, numero*i)
 			}
 			return texto
 
