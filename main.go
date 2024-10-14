@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/luiscomas/go_cero_to_hero/mapas"
+	"github.com/luiscomas/go_cero_to_hero/users"
 )
 
 func main() {
@@ -58,5 +58,6 @@ func main() {
 	//arreglos_slices.Arreglos()
 	//arreglos_slices.Slices()
 	//arreglos_slices.Capacidad()
-	mapas.Mapas()
+	//mapas.Mapas()
+	users.AltaUsuario()
 }
