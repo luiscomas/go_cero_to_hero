@@ -1,6 +1,7 @@
 package users
 
 import (
+	"encoding/json"
 	"fmt"
 	"time"
 
@@ -16,6 +17,10 @@ func AltaUsuario() {
 	// usuario.Status = true
 	// usuario.Id = 1
 	usuario.AddUser(1, "luiscomas", "123456", "cronos@gmail.com", time.Now(), true)
-
-	fmt.Println(usuario)
+	covnertido, err := json.Marshal(usuario)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(string(covnertido))
+	//fmt.Println(usuario)
 }

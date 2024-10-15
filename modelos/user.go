@@ -2,9 +2,8 @@ package modelos
 
 import "time"
 
-func Modelos() {
-
-}
+// IMPORTANTE: la carpeta modelos o Models es donde se definen las estructuras de datos que se van a utilizar en la aplicación.
+// asi como tambien las funciones relacionadas con esas estructuras de datos.
 
 type User struct {
 	Id        int       `json:"id"` //para que el json lo tome en cuenta

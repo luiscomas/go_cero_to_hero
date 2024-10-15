@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/luiscomas/go_cero_to_hero/users"
+	e "github.com/luiscomas/go_cero_to_hero/ejercicios_interfaces"
+	"github.com/luiscomas/go_cero_to_hero/modelos"
 )
 
 func main() {
@@ -59,5 +60,11 @@ func main() {
 	//arreglos_slices.Slices()
 	//arreglos_slices.Capacidad()
 	//mapas.Mapas()
-	users.AltaUsuario()
+	//users.AltaUsuario()
+	Pedro := new(modelos.Hombre)
+	e.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	e.HumanosRespirando(Maria)
+
 }
