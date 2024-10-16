@@ -1,8 +1,7 @@
 package main
 
 import (
-	e "github.com/luiscomas/go_cero_to_hero/ejercicios_interfaces"
-	"github.com/luiscomas/go_cero_to_hero/modelos"
+	d "github.com/luiscomas/go_cero_to_hero/defer_panic"
 )
 
 func main() {
@@ -61,10 +60,17 @@ func main() {
 	//arreglos_slices.Capacidad()
 	//mapas.Mapas()
 	//users.AltaUsuario()
-	Pedro := new(modelos.Hombre)
-	e.HumanosRespirando(Pedro)
 
-	Maria := new(modelos.Mujer)
-	e.HumanosRespirando(Maria)
+	//  interfaces
+	// Pedro := new(modelos.Hombre)
+	// e.HumanosRespirando(Pedro)
+
+	// Maria := new(modelos.Mujer)
+	// e.HumanosRespirando(Maria)
+
+	//defer panic
+
+	//d.MuestroDefer()
+	d.EjemploPanic()
 
 }

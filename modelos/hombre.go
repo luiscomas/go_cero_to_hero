@@ -25,3 +25,11 @@ func (h *Hombre) Pensar() {
 func (h *Hombre) Sexo() string {
 	return "Hombre"
 }
+
+func (h *Hombre) EstaVivo() bool {
+	if h.Respirando == true {
+		return true
+	} else {
+		return false
+	}
+}
