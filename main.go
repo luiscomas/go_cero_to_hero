@@ -1,7 +1,10 @@
 package main
 
 import (
-	d "github.com/luiscomas/go_cero_to_hero/defer_panic"
+	"fmt"
+
+	"github.com/luiscomas/go_cero_to_hero/goroutines"
+	"github.com/luiscomas/go_cero_to_hero/webserver"
 )
 
 func main() {
@@ -71,6 +74,15 @@ func main() {
 	//defer panic
 
 	//d.MuestroDefer()
-	d.EjemploPanic()
+	//d.EjemploPanic()
+
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLento("Luis", canal1)
+	defer func() { <-canal1 }()
+	fmt.Println("Estoy aquí")
+
+	//canal2 := make(chan bool)
+
+	webserver.WWebserver()
 
 }
