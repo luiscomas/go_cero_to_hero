@@ -14,7 +14,7 @@ func (h *Hombre) Respirar() {
 	h.Respirando = true
 }
 
-func (h *Hombre) Comas() {
+func (h *Hombre) Comer() {
 	h.Comiendo = true
 }
 
@@ -22,6 +22,6 @@ func (h *Hombre) Pensar() {
 	h.Pensando = true
 }
 
-func (h *Hombre) Genero() string {
+func (h *Hombre) Sexo() string {
 	return "Hombre"
 }

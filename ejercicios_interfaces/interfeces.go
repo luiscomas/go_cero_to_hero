@@ -8,5 +8,5 @@ import (
 
 func HumanosRespirando(h interfaces.Humano) {
 	h.Respirar()
-	fmt.Printf("soy un %s, y estoy respirando\n", h.Genero())
+	fmt.Printf("soy un %s, y estoy respirando\n", h.Sexo())
 }
