@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/luiscomas/go_cero_to_hero/goroutines"
-	"github.com/luiscomas/go_cero_to_hero/webserver"
+	"github.com/luiscomas/go_cero_to_hero/middleware"
 )
 
 func main() {
@@ -83,6 +83,8 @@ func main() {
 
 	//canal2 := make(chan bool)
 
-	webserver.WWebserver()
+	//webserver.WWebserver()
+	middleware.MiMiddleware()
+	
 
 }
